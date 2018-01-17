@@ -1,2 +1,4 @@
 title: Meghan Thommes
 permalink: /blog/:title
+plugins:
+  - jekyll-sitemap
