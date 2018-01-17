@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Meghan Thommes Launches Site"
+title: "Putting Together the Website"
 date: 2018-01-17
 ---
 
