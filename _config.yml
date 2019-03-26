@@ -1,4 +1,5 @@
 title: Meghan Thommes
 permalink: /blog/:title
+markdown: kramdown
 plugins:
   - jekyll-sitemap
