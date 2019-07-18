@@ -3,12 +3,12 @@
 body {
     padding-top: 20px;
     padding-bottom: 40px;
-    font-family: 'Proza+Libre', Georgia, Times;
+    font-family: 'Proza Libre', Georgia, Times;
     font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: 'Proza+Libre', Georgia, Times;
+    font-family: 'Proza Libre', Georgia, Times;
     font-weight: 700;
 }
 
@@ -38,7 +38,7 @@ h3.text-muted a:hover {
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 img.avatar { margin-bottom: 30px; }
@@ -66,7 +66,7 @@ img.avatar { margin-bottom: 30px; }
 .contact, .cv, .error { margin-bottom: 30px; }
 
 /* Contact */
-iframe {font-family: 'Proza+Libre', Georgia, Times; font-size: 16px;}
+iframe {font-family: 'Proza Libre', Georgia, Times; font-size: 16px;}
 
 /* Code */
 pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
