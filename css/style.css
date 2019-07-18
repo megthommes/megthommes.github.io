@@ -50,13 +50,6 @@ img.avatar { margin-bottom: 30px; }
 /* E-Mail */
 .obfuscate { unicode-bidi: bidi-override; direction: rtl; }
 
-/* Jumbotron */     
-.jumbotron { margin: 80px 0; }
-.jumbotron h1 { font-size: 72px; line-height: 1; }
-.jumbotron .btn { font-size: 21px; padding: 14px 24px; }
-.marketing p { line-height: 25px; }
-.marketing p.lead { line-height: 30px; }
-
 /* CV */
 .cv {line-height: 23px; width: 90%; margin: 0 auto;}
 .cv li { line-height: 23px; }
