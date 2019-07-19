@@ -76,6 +76,7 @@ pre.prettyprint {
     display: inline-block;
     vertical-align: middle;
 }
+.fa-icons contact { font-size: 16px; }
 
 .step {
     border-radius: 50%; 
