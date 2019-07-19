@@ -73,6 +73,7 @@ pre.prettyprint {
 .fa-icons {
     color: #999999;
     font-size: 28px;
+    display: inline-block;
 }
 
 .step {
