@@ -63,7 +63,6 @@ blockquote p {
 .contact ul, li {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 /* About Me */
@@ -71,9 +70,8 @@ blockquote p {
     width: 90%;
     margin: 0 auto;
 }
-.about ul, li {
-    padding: 0;
-    margin: 0;
+.about ul {
+    line-height: 100%;
 }
 
 .contact, .cv, .about, .error { margin-bottom: 30px; }
