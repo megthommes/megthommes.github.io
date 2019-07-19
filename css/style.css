@@ -60,9 +60,9 @@ blockquote p {
     width: 90%;
     margin: 0 auto;
 }
-.contact ul, li {
+.contact li {
     list-style: none;
-    padding: 0;
+    margin: 0 auto;
 }
 
 /* About Me */
@@ -70,9 +70,9 @@ blockquote p {
     width: 90%;
     margin: 0 auto;
 }
-.about ul {
+.about li {
     list-style-type: disc;
-    line-height: 100%;
+    margin: 0 auto;
 }
 
 .contact, .cv, .about, .error { margin-bottom: 30px; }
