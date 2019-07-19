@@ -62,7 +62,16 @@ img.avatar { margin-bottom: 30px; }
 iframe {font-family: 'Proza Libre', Georgia, Times; font-size: 16px;}
 
 /* Code */
-pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
+pre.prettyprint {
+    padding: 10px !important;
+    margin: 40px;
+    font-size: 12px;}
+
+/* Font Awesome Icons */
+.fa-icons {
+    color: #999999;
+    font-size: 20px;
+}
 
 .step {
     border-radius: 50%; 
