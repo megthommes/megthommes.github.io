@@ -67,13 +67,7 @@ pre.prettyprint {
 /* Font Awesome Icons */
 .fa-icons {
     color: #999999;
-    font-size: 36px;
-}
-
-/* Image */
-.fit-image {
-    width: 100%;
-    object-fit: cover;
+    font-size: 28px;
 }
 
 .step {
