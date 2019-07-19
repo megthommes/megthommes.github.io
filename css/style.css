@@ -60,7 +60,17 @@ blockquote p {
     width: 90%;
     margin: 0 auto;
 }
-.contact li { list-style: none; }
+.contact li {
+    list-style: none;
+    padding: 0;
+}
+
+/* About Me */
+.about {
+    width: 90%;
+    margin: 0 auto;
+}
+.about li { padding: 0; }
 
 .contact, .cv, .about, .error { margin-bottom: 30px; }
 
