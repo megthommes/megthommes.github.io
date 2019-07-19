@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Proza+Libre');
+@import url('https://fonts.googleapis.com/css?family=Lato|Proza+Libre|Caveat');
 
 body {
     padding-top: 20px;
@@ -15,6 +15,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 blockquote p {
     font-size: 16px;
     line-height: 1.6em;
+}
+
+.handwriting {
+    font-family: Caveat;
+    font-size: 20pt;
 }
 
 /* Masthead */
@@ -50,7 +55,7 @@ blockquote p {
 .cv h2 { font-size: 26.5px; }
 .cv h1 { font-size: 32.5px; }
 
-.contact, .cv, .error { margin-bottom: 30px; }
+.contact, .cv, .about, .error { margin-bottom: 30px; }
 
 /* Contact */
 iframe {
