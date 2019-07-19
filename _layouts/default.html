@@ -14,9 +14,14 @@
 		
 		</div> <!-- /container -->
 	
-	
 		{% include scripts.html %}
 	
 	</body>
+
+	<script>
+		$(document).ready(function() {
+			$('a[href="' + this.location.pathname + '"]').parent().addClass('active');
+		});
+	</script>
 
 </html>
