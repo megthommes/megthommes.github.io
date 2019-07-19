@@ -19,10 +19,11 @@ blockquote p {
 
 .handwriting {
     font-family: Caveat;
+    font-size: 1.5em;
 }
 
 /* Masthead */
-.header, .footer, .header h3 {
+.header, .footer, .header {
     font-family: Lato, Helvetica, sans-serif;
     font-weight: normal;
 }
