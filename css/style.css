@@ -3,12 +3,12 @@
 body {
     padding-top: 20px;
     padding-bottom: 40px;
-    font-family: 'Proza Libre', Georgia, Times;
+    font-family: Proza Libre, Georgia, Times;
     font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: 'Proza Libre', Georgia, Times;
+    font-family: Proza Libre, Georgia, Times;
     font-weight: 700;
 }
 
@@ -19,19 +19,11 @@ blockquote p {
 
 /* Masthead */
 .header, .footer, .header h3 {
-    font-family: 'Lato', Helvetica, sans-serif;
+    font-family: Lato, Helvetica, sans-serif;
     font-weight: normal;
 }
 
 /* Navigation */
-h3.text-muted a {
-    text-decoration: none;
-    color: #999999;
-}
-h3.text-muted a:hover {
-    text-decoration: none;
-    color: #0088cc;
-}
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -40,8 +32,6 @@ h3.text-muted a:hover {
     margin-bottom: 0;
     font-size: 20px;
 }
-
-img.avatar { margin-bottom: 30px; }
         
 /* Custom container */
 .container > hr { margin: 30px 0; }
@@ -51,7 +41,11 @@ img.avatar { margin-bottom: 30px; }
 .obfuscate { unicode-bidi: bidi-override; direction: rtl; }
 
 /* CV */
-.cv {line-height: 23px; width: 90%; margin: 0 auto;}
+.cv {
+    line-height: 23px;
+    width: 90%;
+    margin: 0 auto;
+}
 .cv li { line-height: 23px; }
 .cv h2 { font-size: 26.5px; }
 .cv h1 { font-size: 32.5px; }
@@ -59,7 +53,10 @@ img.avatar { margin-bottom: 30px; }
 .contact, .cv, .error { margin-bottom: 30px; }
 
 /* Contact */
-iframe {font-family: 'Proza Libre', Georgia, Times; font-size: 16px;}
+iframe {
+    font-family: Proza Libre, Georgia, Times;
+    font-size: 16px;
+}
 
 /* Code */
 pre.prettyprint {
@@ -70,7 +67,13 @@ pre.prettyprint {
 /* Font Awesome Icons */
 .fa-icons {
     color: #999999;
-    font-size: 20px;
+    font-size: 36px;
+}
+
+/* Image */
+.fit-image {
+    width: 100%;
+    object-fit: cover;
 }
 
 .step {
@@ -86,5 +89,5 @@ pre.prettyprint {
     font-size: 24px;
     padding-top: 5.5px;
     margin: 5px 15px 0px 0px;
-    font-family: 'Lato', Helvetica, sans-serif;
+    font-family: Lato, Helvetica, sans-serif;
 }
