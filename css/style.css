@@ -70,12 +70,6 @@ pre.prettyprint {
     font-size: 28px;
 }
 
-/* Images */
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
-
 .step {
     border-radius: 50%; 
     -moz-border-radius: 50%; 
