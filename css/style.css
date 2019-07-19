@@ -55,6 +55,13 @@ blockquote p {
 .cv h2 { font-size: 26.5px; }
 .cv h1 { font-size: 32.5px; }
 
+/* Contact */
+.contact {
+    width: 90%;
+    margin: 0 auto;
+}
+.contact li { list-style: none; }
+
 .contact, .cv, .about, .error { margin-bottom: 30px; }
 
 /* Contact */
