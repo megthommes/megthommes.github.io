@@ -62,6 +62,12 @@ blockquote p {
 }
 .contact li { list-style: none; }
 
+/* About Me */
+.about {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .contact, .cv, .about, .error { margin-bottom: 30px; }
 
 /* Contact */
