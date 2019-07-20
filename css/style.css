@@ -22,13 +22,6 @@ blockquote p {
     font-size: 1.5em;
 }
 
-/* Lists */
-.ul {
-    margin: 0px auto;
-    padding: 0px auto;
-    line-height: 1; 
-}
-
 /* Masthead */
 .header, .footer, .header {
     font-family: Lato, Helvetica, sans-serif;
