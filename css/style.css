@@ -62,7 +62,7 @@ blockquote p {
 }
 .contact li {
     list-style: none;
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
 }
 
 /* About Me */
