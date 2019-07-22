@@ -25,10 +25,9 @@ blockquote p {
 /*  */
 .py-0 {
     display: block;
-    margin-top: !important;
-    margin-bottom: !important;
-    line-height: 1em;
-    color: blue;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    color: green;
 }
 
 /* Masthead */
