@@ -27,8 +27,7 @@ blockquote p {
     display: block;
     margin-top: !important;
     margin-bottom: !important;
-    line-height: 1em;
-    color: red;
+    line-height: 0em;
 }
 
 /* Masthead */
