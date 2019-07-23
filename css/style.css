@@ -23,11 +23,13 @@ blockquote p {
 }
 
 /*  */
-.py-0 {
+ul.py-0 {
     display: block;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
-    color: red;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    color: blue;
 }
 
 /* Masthead */
