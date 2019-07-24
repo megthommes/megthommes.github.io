@@ -22,16 +22,6 @@ blockquote p {
     font-size: 1.5em;
 }
 
-/*  */
-ul.py-0 {
-    display: block;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    color: blue;
-}
-
 /* Masthead */
 .header, .footer, .header {
     font-family: Lato, Helvetica, sans-serif;
@@ -60,30 +50,30 @@ ul.py-0 {
 
 /* CV */
 .cv {
-    line-height: 23px;
-    width: 90%;
-    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.25em;
 }
 .cv li { line-height: 23px; }
-.cv h2 { font-size: 26.5px; }
-.cv h1 { font-size: 32.5px; }
+.cv h1 { font-size: 32px; }
+.cv h2 {
+    font-size: 26px;
+    margin: 0em auto;
+}
+.cv h3 {
+    font-size: 20px;
+    margin: 0em auto;
+}
 
 /* Contact */
-.contact {
-    width: 90%;
-    margin: 0 auto;
-}
 .contact ul {
     list-style: none;
 }
 
-/* About Me */
-.about {
+.contact, .cv, .about, .error {
     width: 90%;
-    margin: 0 auto;
+    margin: 0em auto;
+    margin-bottom: 30px;
 }
-
-.contact, .cv, .about, .error { margin-bottom: 30px; }
 
 /* Contact */
 iframe {
