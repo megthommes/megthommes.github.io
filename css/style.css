@@ -1,46 +1,88 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Proza+Libre|Caveat');
 
+:root {
+    --hf-margin-x: 80px;
+    --main-margin-x: 40px;
+    --main-background-color: #FFFFFF; /* white */
+    --img-background-color: rgba(230,230,250,0.5); /* lavender */
+    --navbar-footer-text-color: #E6E6FA; /* lavender */
+    --navbar-header-text-color: #4B0082; /* indigo */ 
+    --navbar-text-color-active: #37005F; /* deep violet */
+    --navbar-text-color-hover: #008B8B; /* dark cyan */
+    --navbar-background-color-hover: rgba(224,255,255,0.5);; /* light cyan */
+}
+
 body {
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding: 0 0;
     font-family: Proza Libre, Georgia, Times;
     font-size: 16px;
 }
-
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: Proza Libre, Georgia, Times;
     font-weight: 700;
 }
 
-blockquote p {
-    font-size: 16px;
-    line-height: 1.6em;
+/* Links */
+a:link, a:visited {
+    color: #2E8B57; /* sea green */
 }
 
+/* Handwriting */
 .handwriting {
     font-family: Caveat;
     font-size: 1.5em;
 }
 
+/* Cards */
+.card { border-color: var(--main-background-color); } /* border same color as background */
+
+
+/* Background Image */
+.hero-img {
+    background-image: linear-gradient(to bottom,var(--img-background-color),var(--img-background-color)), url("../img/succulents_pixabay_AnnieSpratt.jpg");
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
 /* Masthead */
-.header, .footer, .header {
+.header, .footer {
     font-family: Lato, Helvetica, sans-serif;
     font-weight: normal;
+    margin: 0 var(--hf-margin-x);
 }
 
 /* Navigation */
 .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 0 15px;
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
     font-size: 20px;
 }
-        
-/* Custom container */
-.container > hr { margin: 30px 0; }
-.container > hr.footer {margin-bottom: 15px; }
+.navbar .navbar-brand {
+    color: var(--navbar-text-color-active);
+}
+.navbar .navbar-text {
+    color: var(--navbar-footer-text-color);
+    font-weight: bold;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+    color: var(--navbar-header-text-color);
+}
+.navbar .navbar-nav .nav-item .active {
+    color: var(--navbar-text-color-active);
+    font-weight: bold;
+}
+.navbar .navbar-nav .nav-item:focus .nav-link,
+.navbar .navbar-nav .nav-item:hover .nav-link {
+    color: var(--navbar-text-color-hover);
+    background: var(--navbar-background-color-hover);
+    border-radius: 10px;
+}
 
 /* E-Mail */
 .obfuscate {
@@ -57,11 +99,15 @@ blockquote p {
 .cv h1 { font-size: 32px; }
 .cv h2 {
     font-size: 26px;
-    margin: 0em auto;
+    margin: 0 auto;
 }
 .cv h3 {
     font-size: 20px;
-    margin: 0em auto;
+    margin: 0 auto;
+}
+.cv col-6 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* Contact */
@@ -69,10 +115,11 @@ blockquote p {
     list-style: none;
 }
 
-.contact, .cv, .about, .error {
-    width: 90%;
-    margin: 0em auto;
-    margin-bottom: 30px;
+.home, .about, .cv, .projects, .contact, .error {
+    margin: 0 var(--main-margin-x);
+    border-radius: 25px;
+    background-color: var(--main-background-color);
+    padding: 20px 20px;
 }
 
 /* Contact */
@@ -89,7 +136,7 @@ pre.prettyprint {
 
 /* Font Awesome Icons */
 .fa-icons {
-    color: #999999;
+    color: var(--navbar-footer-text-color);
     font-size: 28px;
     display: inline-block;
     vertical-align: middle;
@@ -107,6 +154,6 @@ pre.prettyprint {
     text-align: center;
     font-size: 24px;
     padding-top: 5.5px;
-    margin: 5px 15px 0px 0px;
+    margin: 5px 15px 0 0;
     font-family: Lato, Helvetica, sans-serif;
 }

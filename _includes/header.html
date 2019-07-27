@@ -1,16 +1,23 @@
 <div class="header">
 	<!-- horizontal navbar that becomes vertical on small screens -->
-	<nav id="navbar-header" class="navbar navbar-expand-sm navbar-light">
-		<a class="navbar-brand handwriting" href="https://meghanthommes.com">Meghan Thommes</a>
+	<nav class="navbar navbar-expand-sm" id="navbar-header">
+		<a class="navbar-brand handwriting" href="/" style="font-size:2em">Meghan Thommes</a>
 
 		<ul class="navbar-nav">
 			<!-- About Me -->
 			<li class="nav-item">
-				<a class="nav-link {{ page.about }}" href="/about">About Me</a>
+				<a class="nav-link {{ page.about }}" href="/about-me">About Me</a>
 			</li>
 			<!-- CV -->
 			<li class="nav-item">
 				<a class="nav-link {{ page.cv }}" href="/cv">CV</a>
+			</li>
+			<!-- Projects -->
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle {{ page.projects }}" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="/projects/dolmn">DOLMN</a>
+				</div>
 			</li>
 			<!-- Contact -->
 			<li class="nav-item">
@@ -18,5 +25,5 @@
 			</li>
 		</ul>
 
-	</nav>	
+	</nav>
 </div> <!-- /header -->
