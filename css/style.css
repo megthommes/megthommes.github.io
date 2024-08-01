@@ -3,28 +3,37 @@
 :root {
     --hf-margin-x: 80px;
     --main-margin-x: 40px;
-    --main-background-color: #FFFFFF; /* white */
-    --img-background-color: rgba(230,230,250,0.5); /* lavender */
-    --navbar-footer-text-color: #E6E6FA; /* lavender */
-    --navbar-header-text-color: #4B0082; /* indigo */ 
-    --navbar-text-color-active: #37005F; /* deep violet */
-    --navbar-text-color-hover: #008B8B; /* dark cyan */
-    --navbar-background-color-hover: rgba(224,255,255,0.5);; /* light cyan */
+    --text-color: #D8F1FD; /* columbia blue */
+    --text-color-emphasize: #3EBDF4; /* deep sky blue */
+    --background-color: #00072D; /* oxford blue */
+    --navbar-text-color: var(--text-color);
+    --navbar-text-color-active: var(--text-color-emphasize);
+    --navbar-text-color-hover: var(--background-color);
+    --navbar-background-color-hover: var(--navbar-text-color);
+    --btn-text-color: var(--background-color);
+    --btn-background-color: var(--text-color);
+    --btn-background-color-hover: var(--navbar-text-color);
 }
 
 body {
     padding: 0 0;
     font-family: Proza Libre, Georgia, Times;
     font-size: 16px;
+    background-color: var(--background-color);
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: Proza Libre, Georgia, Times;
     font-weight: 700;
 }
 
+.emphasize {
+    font-weight: bold;
+    color: var(--text-color-emphasize);
+}
+
 /* Links */
 a:link, a:visited {
-    color: #2E8B57; /* sea green */
+    color: var(--text-color-emphasize);
 }
 
 /* Handwriting */
@@ -34,22 +43,18 @@ a:link, a:visited {
 }
 
 /* Cards */
-.card { border-color: var(--main-background-color); } /* border same color as background */
-
-
-/* Background Image */
-.hero-img {
-    background-image: linear-gradient(to bottom,var(--img-background-color),var(--img-background-color)), url("../img/succulents_pixabay_AnnieSpratt.jpg");
-    background-repeat: repeat-y;
-    background-size: 100% auto;
-    display: block;
-    position: relative;
-    height: 100%;
-    width: 100%;
+.card {
+    border-color: var(--background-color);
+    background-color: var(--background-color);
 }
 
 /* Masthead */
-.header, .footer {
+.header {
+    font-family: Lato, Helvetica, sans-serif;
+    font-weight: normal;
+    margin: 0 var(--hf-margin-x);
+}
+.footer {
     font-family: Lato, Helvetica, sans-serif;
     font-weight: normal;
     margin: 0 var(--hf-margin-x);
@@ -64,14 +69,14 @@ a:link, a:visited {
     font-size: 20px;
 }
 .navbar .navbar-brand {
-    color: var(--navbar-text-color-active);
+    color: var(--navbar-text-color);
 }
 .navbar .navbar-text {
-    color: var(--navbar-footer-text-color);
+    color: var(--navbar-text-color);
     font-weight: bold;
 }
 .navbar .navbar-nav .nav-item .nav-link {
-    color: var(--navbar-header-text-color);
+    color: var(--navbar-text-color);
 }
 .navbar .navbar-nav .nav-item .active {
     color: var(--navbar-text-color-active);
@@ -95,19 +100,19 @@ a:link, a:visited {
     font-size: 16px;
     line-height: 1.25em;
 }
-.cv li { line-height: 23px; }
-.cv h1 { font-size: 32px; }
-.cv h2 {
-    font-size: 26px;
-    margin: 0 auto;
+.btn-custom {
+    border-radius: 0.5rem;
+    color: var(--btn-text-color);
+    background-color: var(--btn-background-color);
+    border-color: var(--btn-background-color);
 }
-.cv h3 {
-    font-size: 20px;
-    margin: 0 auto;
+.btn-custom:hover {
+    color: var(--btn-text-color);
+    background-color: var(--btn-background-color-hover);
+    border-color: transparent;
 }
-.cv col-6 {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+.text-btn {
+    color: var(--btn-text-color);
 }
 
 /* Contact */
@@ -118,7 +123,7 @@ a:link, a:visited {
 .home, .about, .cv, .projects, .contact, .error {
     margin: 0 var(--main-margin-x);
     border-radius: 25px;
-    background-color: var(--main-background-color);
+    color: var(--text-color);
     padding: 20px 20px;
 }
 
@@ -136,20 +141,20 @@ pre.prettyprint {
 
 /* Font Awesome Icons */
 .fa-icons {
-    color: var(--navbar-footer-text-color);
+    color: var(--navbar-text-color);
     font-size: 28px;
     display: inline-block;
     vertical-align: middle;
 }
 
 .step {
-    border-radius: 50%; 
-    -moz-border-radius: 50%; 
-    -webkit-border-radius: 50%; 
-    width: 35px; 
-    height: 35px; 
-    background: #4679BD; 
-    color: #FFF; 
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background: #4679BD;
+    color: #FFF;
     float: left;
     text-align: center;
     font-size: 24px;
